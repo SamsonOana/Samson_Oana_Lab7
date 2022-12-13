@@ -33,4 +33,13 @@ public partial class ListEntryPage : ContentPage
             });
         }
     }
+    async void OnChooseButtonClicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new ProductPage((ShopList) this.BindingContext)
+        {
+            BindingContext = new Product()
+        });
+
+    }
+
 }
