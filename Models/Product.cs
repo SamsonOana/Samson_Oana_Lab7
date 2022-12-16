@@ -16,7 +16,7 @@ namespace Samson_Oana_Lab7.Models
         [OneToMany]
         public List<ListProduct> ListProducts { get; set; }
     }
-    
-    
-    
+
+
+
 }

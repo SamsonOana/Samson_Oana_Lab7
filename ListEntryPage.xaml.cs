@@ -4,12 +4,10 @@ namespace Samson_Oana_Lab7;
 
 public partial class ListEntryPage : ContentPage
 {
-	public ListEntryPage()
-	{
-		InitializeComponent();
-	}
-
-   
+    public ListEntryPage()
+    {
+        InitializeComponent();
+    }
 
     protected override async void OnAppearing()
     {
@@ -33,13 +31,4 @@ public partial class ListEntryPage : ContentPage
             });
         }
     }
-    async void OnChooseButtonClicked(object sender, EventArgs e)
-    {
-        await Navigation.PushAsync(new ProductPage((ShopList) this.BindingContext)
-        {
-            BindingContext = new Product()
-        });
-
-    }
-
 }

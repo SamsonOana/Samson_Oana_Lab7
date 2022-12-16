@@ -43,6 +43,5 @@ public partial class ProductPage : ContentPage
             p.ListProducts = new List<ListProduct> { lp };
             await Navigation.PopAsync();
         }
-
     }
 }

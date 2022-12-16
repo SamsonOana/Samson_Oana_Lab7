@@ -16,5 +16,5 @@ namespace Samson_Oana_Lab7.Models
         public int ShopListID { get; set; }
         public int ProductID { get; set; }
     }
-  
+
 }
